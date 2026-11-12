@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Обучение таргетированной рекламе в Алматы | Target Academy</title>
+<meta name="description" content="Обучение таргетированной рекламе в Алматы с нуля. Освойте запуск рекламы в Instagram и Facebook и научитесь привлекать клиентов для бизнеса.">
+<meta name="theme-color" content="#0A0E1A">
+<meta property="og:title" content="Обучение таргетированной рекламе в Алматы | Target Academy">
+<meta property="og:description" content="Освойте запуск рекламы в Instagram и Facebook с нуля. Обучение таргетированной рекламе в Алматы.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============ TARGET ACADEMY — scoped styles (ta-) ============ */
+.ta-root *,.ta-root *::before,.ta-root *::after{box-sizing:border-box;margin:0;padding:0}
+.ta-root{--bg-primary:#0A0E1A;--bg-secondary:#060912;--bg-tertiary:#0F1424;--bg-card:#0D1322;--accent-purple:#8B5CF6;--accent-purple-2:#A78BFA;--accent-blue:#6366F1;--accent-cyan:#22D3EE;--text-primary:#FFFFFF;--text-secondary:#AEB4C4;--text-muted:#6B7180;--glass:rgba(255,255,255,0.04);--glass-2:rgba(255,255,255,0.06);--glass-border:rgba(255,255,255,0.09);--grad-main:linear-gradient(135deg,#8B5CF6 0%,#6366F1 100%);--grad-soft:linear-gradient(135deg,rgba(139,92,246,0.18),rgba(99,102,241,0.12));--radius:18px;--radius-lg:26px;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text-primary);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;width:100%}
+.ta-root body-fix{overflow-x:hidden}
+.ta-root h1,.ta-root h2,.ta-root h3,.ta-root h4{font-family:'Manrope',sans-serif;font-weight:700;line-height:1.2;letter-spacing:-0.02em;color:var(--text-primary)}
+.ta-root p{color:var(--text-secondary)}
+.ta-root a{color:inherit;text-decoration:none}
+.ta-root img{max-width:100%;display:block}
+.ta-root ul{list-style:none}
+.ta-root button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.ta-root .ta-container{width:100%;max-width:1240px;margin:0 auto;padding:0 24px}
+.ta-root section{position:relative}
+
+/* ===== Background ambiance ===== */
+.ta-bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(1200px 700px at 75% -5%,rgba(139,92,246,0.16),transparent 60%),radial-gradient(900px 600px at 10% 20%,rgba(99,102,241,0.12),transparent 55%),radial-gradient(1000px 800px at 50% 110%,rgba(34,211,238,0.06),transparent 60%),var(--bg-primary);pointer-events:none}
+.ta-bg::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.022) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 0%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 30%,transparent 75%)}
+
+/* ===== Buttons ===== */
+.ta-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Manrope',sans-serif;font-weight:600;font-size:15px;padding:14px 26px;border-radius:14px;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;white-space:nowrap;cursor:pointer;text-align:center;line-height:1}
+.ta-btn-primary{background:var(--grad-main);color:#fff;box-shadow:0 10px 30px -10px rgba(139,92,246,0.6),inset 0 1px 0 rgba(255,255,255,0.18)}
+.ta-btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(139,92,246,0.75),inset 0 1px 0 rgba(255,255,255,0.25)}
+.ta-btn-ghost{background:var(--glass);color:var(--text-primary);border:1px solid var(--glass-border);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.ta-btn-ghost:hover{transform:translateY(-2px);background:var(--glass-2);border-color:rgba(139,92,246,0.4)}
+.ta-btn-lg{padding:17px 34px;font-size:16px}
+.ta-btn .ta-wa-ico{width:18px;height:18px;flex:0 0 auto}
+
+/* ===== Header ===== */
+.ta-header{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background .3s ease,backdrop-filter .3s ease,border-color .3s ease,padding .3s ease;border-bottom:1px solid transparent}
+.ta-header.scrolled{background:rgba(8,11,20,0.72);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid var(--glass-border)}
+.ta-header-inner{display:flex;align-items:center;justify-content:space-between;height:74px;transition:height .3s ease}
+.ta-header.scrolled .ta-header-inner{height:64px}
+.ta-logo{display:flex;align-items:center;gap:11px;font-family:'Manrope',sans-serif;font-weight:800;font-size:17px;letter-spacing:0.04em;color:#fff}
+.ta-logo-mark{width:34px;height:34px;border-radius:10px;background:var(--grad-main);display:grid;place-items:center;box-shadow:0 6px 18px -6px rgba(139,92,246,0.7);position:relative;overflow:hidden}
+.ta-logo-mark::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.35) 50%,transparent 70%);transform:translateX(-100%);transition:transform .6s ease}
+.ta-logo:hover .ta-logo-mark::after{transform:translateX(100%)}
+.ta-logo-mark svg{width:18px;height:18px;position:relative;z-index:2}
+.ta-logo span{background:linear-gradient(90deg,#fff,#C7CFFF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ta-nav{display:flex;align-items:center;gap:30px}
+.ta-nav a{font-size:14.5px;font-weight:500;color:var(--text-secondary);transition:color .2s ease;position:relative}
+.ta-nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;border-radius:2px;background:var(--grad-main);transition:width .25s ease}
+.ta-nav a:hover{color:#fff}
+.ta-nav a:hover::after{width:100%}
+.ta-header-cta{display:flex;align-items:center;gap:14px}
+.ta-header .ta-btn{padding:11px 22px;font-size:14px}
+.ta-burger{display:none;width:42px;height:42px;border-radius:11px;background:var(--glass);border:1px solid var(--glass-border);position:relative;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.ta-burger span{display:block;width:20px;height:2px;background:#fff;border-radius:2px;transition:transform .3s ease,opacity .25s ease}
+.ta-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.ta-burger.open span:nth-child(2){opacity:0}
+.ta-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.ta-mobile-nav{position:fixed;top:74px;left:0;width:100%;background:rgba(8,11,20,0.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);padding:18px 24px 26px;display:flex;flex-direction:column;gap:6px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .3s ease,opacity .3s ease;z-index:999}
+.ta-mobile-nav.open{transform:translateY(0);opacity:1;pointer-events:auto}
+.ta-mobile-nav a{padding:14px 16px;border-radius:12px;font-size:16px;font-weight:500;color:var(--text-secondary);transition:background .2s ease,color .2s ease}
+.ta-mobile-nav a:hover{background:var(--glass);color:#fff}
+.ta-mobile-nav .ta-btn{margin-top:10px;width:100%}
+
+/* ===== Hero ===== */
+.ta-hero{padding:150px 0 90px;position:relative;overflow:hidden}
+.ta-hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:54px;align-items:center}
+.ta-eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:50px;background:var(--glass);border:1px solid var(--glass-border);font-size:13px;font-weight:500;color:var(--accent-purple-2);margin-bottom:24px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.ta-eyebrow .ta-dot{width:7px;height:7px;border-radius:50%;background:var(--accent-purple);box-shadow:0 0 0 4px rgba(139,92,246,0.18)}
+.ta-hero h1{font-size:clamp(30px,4.4vw,52px);font-weight:800;line-height:1.1;margin-bottom:22px}
+.ta-hero h1 .ta-hl{background:linear-gradient(120deg,#A78BFA 0%,#818CF8 50%,#22D3EE 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ta-hero-sub{font-size:clamp(16px,1.6vw,18px);color:var(--text-secondary);max-width:560px;margin-bottom:30px;line-height:1.7}
+.ta-hero-benefits{display:flex;flex-direction:column;gap:14px;margin-bottom:36px}
+.ta-hero-benefit{display:flex;align-items:flex-start;gap:13px;font-size:15px;color:var(--text-secondary);line-height:1.5}
+.ta-hero-benefit .ta-check{flex:0 0 auto;width:24px;height:24px;border-radius:8px;background:var(--grad-soft);border:1px solid rgba(139,92,246,0.3);display:grid;place-items:center;margin-top:1px}
+.ta-hero-benefit .ta-check svg{width:13px;height:13px;color:var(--accent-purple-2)}
+.ta-hero-benefit b{color:#fff;font-weight:600}
+.ta-hero-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.ta-hero-note{font-size:13.5px;color:var(--text-muted);display:flex;align-items:center;gap:8px}
+.ta-hero-note svg{width:15px;height:15px;color:var(--accent-purple-2)}
+
+/* Hero visual */
+.ta-hero-visual{position:relative;min-height:440px;display:flex;align-items:center;justify-content:center}
+.ta-glow{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,0.45),transparent 65%);filter:blur(20px);top:50%;left:50%;transform:translate(-50%,-50%);z-index:0}
+.ta-dashboard{position:relative;z-index:2;width:100%;max-width:420px;background:linear-gradient(160deg,rgba(20,26,42,0.92),rgba(12,16,28,0.92));border:1px solid var(--glass-border);border-radius:22px;padding:22px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 30px 60px -20px rgba(0,0,0,0.7),inset 0 1px 0 rgba(255,255,255,0.06)}
+.ta-dash-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.ta-dash-title{display:flex;align-items:center;gap:10px}
+.ta-dash-title .ta-avatar{width:30px;height:30px;border-radius:9px;background:var(--grad-main);display:grid;place-items:center;font-family:'Manrope';font-weight:700;font-size:13px;color:#fff}
+.ta-dash-title .ta-name{font-family:'Manrope';font-weight:600;font-size:14px;color:#fff;line-height:1.2}
+.ta-dash-title .ta-name small{display:block;font-family:'Inter';font-weight:400;font-size:11.5px;color:var(--text-muted)}
+.ta-dash-badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:500;color:#7CE7B8;background:rgba(124,231,184,0.1);border:1px solid rgba(124,231,184,0.25);padding:5px 10px;border-radius:20px}
+.ta-dash-badge .ta-dot{width:6px;height:6px;border-radius:50%;background:#7CE7B8;box-shadow:0 0 6px #7CE7B8}
+.ta-dash-chart{background:rgba(255,255,255,0.025);border:1px solid var(--glass-border);border-radius:14px;padding:14px 12px 10px;margin-bottom:14px}
+.ta-dash-chart-lbl{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ta-dash-chart-lbl span{font-size:11.5px;color:var(--text-muted);font-weight:500}
+.ta-dash-chart-lbl b{font-size:11px;color:var(--accent-purple-2);font-weight:600}
+.ta-dash-chart svg{width:100%;height:90px;display:block}
+.ta-dash-tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ta-dash-tile{background:rgba(255,255,255,0.03);border:1px solid var(--glass-border);border-radius:12px;padding:11px 12px}
+.ta-dash-tile .ta-tl{font-size:11px;color:var(--text-muted);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.ta-dash-tile .ta-tl svg{width:12px;height:12px;color:var(--accent-purple-2)}
+.ta-chips{display:flex;flex-wrap:wrap;gap:5px}
+.ta-chips span{font-size:10.5px;color:#D7DBF5;background:rgba(139,92,246,0.14);border:1px solid rgba(139,92,246,0.25);padding:3px 8px;border-radius:20px}
+.ta-bars{display:flex;align-items:flex-end;gap:4px;height:22px}
+.ta-bars i{display:block;width:7px;border-radius:3px;background:var(--grad-main);opacity:.85}
+
+.ta-float{position:absolute;z-index:3;background:rgba(16,21,36,0.85);border:1px solid var(--glass-border);border-radius:14px;padding:11px 14px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 18px 36px -16px rgba(0,0,0,0.7)}
+.ta-float-1{top:6%;left:-4%;display:flex;align-items:center;gap:10px;animation:taFloat 6s ease-in-out infinite}
+.ta-float-2{bottom:8%;right:-3%;display:flex;align-items:center;gap:11px;animation:taFloat 6s ease-in-out infinite .8s}
+.ta-float .ta-f-ico{width:32px;height:32px;border-radius:9px;background:var(--grad-soft);border:1px solid rgba(139,92,246,0.3);display:grid;place-items:center;color:var(--accent-purple-2)}
+.ta-float .ta-f-ico svg{width:16px;height:16px}
+.ta-float b{display:block;font-family:'Manrope';font-weight:600;font-size:12.5px;color:#fff;line-height:1.2}
+.ta-float small{font-size:11px;color:var(--text-muted)}
+@keyframes taFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ===== Section common ===== */
+.ta-section{padding:96px 0}
+.ta-section-head{text-align:center;max-width:720px;margin:0 auto 56px}
+.ta-section-head .ta-eyebrow{margin-bottom:18px}
+.ta-section-head h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;margin-bottom:16px}
+.ta-section-head p{font-size:16px;color:var(--text-secondary);line-height:1.7}
+.ta-divider{height:1px;background:linear-gradient(90deg,transparent,var(--glass-border),transparent);margin:0;border:none}
+
+/* ===== Audience ===== */
+.ta-audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ta-card{position:relative;background:var(--bg-card);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:34px 30px;overflow:hidden;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.ta-card::before{content:"";position:absolute;inset:0;background:var(--grad-soft);opacity:0;transition:opacity .35s ease;pointer-events:none}
+.ta-card:hover{transform:translateY(-6px);border-color:rgba(139,92,246,0.35);box-shadow:0 24px 50px -24px rgba(99,102,241,0.45)}
+.ta-card:hover::before{opacity:1}
+.ta-card-ico{width:54px;height:54px;border-radius:15px;background:var(--grad-soft);border:1px solid rgba(139,92,246,0.3);display:grid;place-items:center;margin-bottom:22px;color:var(--accent-purple-2);position:relative;z-index:2}
+.ta-card-ico svg{width:26px;height:26px}
+.ta-card h3{font-size:20px;font-weight:700;margin-bottom:12px;position:relative;z-index:2}
+.ta-card p{font-size:14.5px;line-height:1.65;color:var(--text-secondary);position:relative;z-index:2}
+.ta-card-num{position:absolute;top:24px;right:26px;font-family:'Manrope';font-weight:800;font-size:46px;color:rgba(139,92,246,0.10);line-height:1;z-index:1}
+
+/* ===== Program (cards) ===== */
+.ta-program-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ta-pcard{position:relative;background:var(--bg-card);border:1px solid var(--glass-border);border-radius:var(--radius);padding:26px 22px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;overflow:hidden}
+.ta-pcard::after{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--grad-main);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.ta-pcard:hover{transform:translateY(-5px);border-color:rgba(139,92,246,0.35);box-shadow:0 20px 40px -22px rgba(99,102,241,0.4)}
+.ta-pcard:hover::after{transform:scaleX(1)}
+.ta-pcard-num{font-family:'Manrope';font-weight:700;font-size:13px;color:var(--accent-purple-2);margin-bottom:14px;display:inline-flex;align-items:center;gap:7px}
+.ta-pcard-num::before{content:"";width:22px;height:1.5px;background:var(--accent-purple);border-radius:2px}
+.ta-pcard-ico{width:44px;height:44px;border-radius:12px;background:var(--grad-soft);border:1px solid rgba(139,92,246,0.25);display:grid;place-items:center;margin-bottom:16px;color:var(--accent-purple-2)}
+.ta-pcard-ico svg{width:22px;height:22px}
+.ta-pcard h3{font-size:16.5px;font-weight:600;margin-bottom:8px;line-height:1.3}
+.ta-pcard p{font-size:13.5px;color:var(--text-muted);line-height:1.55}
+
+/* ===== How / Steps ===== */
+.ta-steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.ta-steps::before{content:"";position:absolute;top:36px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,rgba(139,92,246,0.1),rgba(139,92,246,0.5),rgba(139,92,246,0.1));z-index:0}
+.ta-step{text-align:center;position:relative;z-index:2}
+.ta-step-circle{width:72px;height:72px;border-radius:50%;background:var(--bg-card);border:2px solid rgba(139,92,246,0.35);display:grid;place-items:center;margin:0 auto 18px;color:var(--accent-purple-2);box-shadow:0 0 0 6px rgba(10,14,26,1),0 12px 28px -10px rgba(139,92,246,0.4);transition:transform .3s ease,border-color .3s ease}
+.ta-step:hover .ta-step-circle{transform:scale(1.06);border-color:var(--accent-purple)}
+.ta-step-circle svg{width:30px;height:30px}
+.ta-step h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.ta-step p{font-size:13.5px;color:var(--text-muted);line-height:1.6;max-width:230px;margin:0 auto}
+.ta-step .ta-step-n{position:absolute;top:-6px;right:calc(50% - 44px);width:24px;height:24px;border-radius:50%;background:var(--grad-main);color:#fff;font-family:'Manrope';font-weight:700;font-size:12px;display:grid;place-items:center;box-shadow:0 4px 10px -2px rgba(139,92,246,0.6)}
+
+/* ===== Result ===== */
+.ta-result{background:linear-gradient(160deg,rgba(139,92,246,0.08),rgba(99,102,241,0.03));border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:48px;overflow:hidden;position:relative}
+.ta-result::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,0.18),transparent 70%);top:-80px;right:-60px;filter:blur(10px)}
+.ta-result-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;z-index:2}
+.ta-result h2{font-size:clamp(24px,3vw,36px);margin-bottom:18px}
+.ta-result>p{font-size:15.5px;line-height:1.7;margin-bottom:26px}
+.ta-result-list{display:flex;flex-direction:column;gap:14px}
+.ta-result-item{display:flex;align-items:flex-start;gap:13px;background:var(--glass);border:1px solid var(--glass-border);border-radius:14px;padding:16px 18px}
+.ta-result-item .ta-check{flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:var(--grad-main);display:grid;place-items:center;box-shadow:0 6px 14px -6px rgba(139,92,246,0.6)}
+.ta-result-item .ta-check svg{width:14px;height:14px;color:#fff}
+.ta-result-item b{display:block;font-size:15px;color:#fff;font-weight:600;margin-bottom:3px}
+.ta-result-item span{font-size:13.5px;color:var(--text-muted);line-height:1.5}
+.ta-result-visual{display:flex;flex-direction:column;gap:14px}
+.ta-result-skill{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:14px;padding:18px 20px;display:flex;align-items:center;gap:14px;transition:transform .25s ease,border-color .25s ease}
+.ta-result-skill:hover{transform:translateX(4px);border-color:rgba(139,92,246,0.35)}
+.ta-result-skill .ta-rs-ico{width:40px;height:40px;border-radius:11px;background:var(--grad-soft);border:1px solid rgba(139,92,246,0.25);display:grid;place-items:center;color:var(--accent-purple-2);flex:0 0 auto}
+.ta-result-skill .ta-rs-ico svg{width:20px;height:20px}
+.ta-result-skill b{font-size:14.5px;color:#fff;font-weight:600;display:block;line-height:1.3}
+.ta-result-skill small{font-size:12.5px;color:var(--text-muted)}
+
+/* ===== Benefits ===== */
+.ta-benefits-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ta-bcard{position:relative;background:linear-gradient(160deg,var(--bg-card),rgba(13,19,34,0.7));border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:30px 24px;overflow:hidden;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.ta-bcard::before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,0.25),transparent 70%);top:-40px;right:-40px;opacity:0;transition:opacity .35s ease}
+.ta-bcard:hover{transform:translateY(-6px);border-color:rgba(139,92,246,0.4);box-shadow:0 24px 50px -24px rgba(99,102,241,0.45)}
+.ta-bcard:hover::before{opacity:1}
+.ta-bcard-ico{width:50px;height:50px;border-radius:14px;background:var(--grad-main);display:grid;place-items:center;margin-bottom:20px;box-shadow:0 10px 24px -10px rgba(139,92,246,0.7);color:#fff}
+.ta-bcard-ico svg{width:24px;height:24px}
+.ta-bcard h3{font-size:17px;font-weight:700;margin-bottom:10px;line-height:1.3}
+.ta-bcard p{font-size:13.5px;color:var(--text-secondary);line-height:1.6}
+
+/* ===== About ===== */
+.ta-about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:48px;align-items:center}
+.ta-photo-frame{position:relative;width:100%;max-width:360px;margin:0 auto}
+.ta-photo-frame::before{content:"";position:absolute;inset:-2px;border-radius:24px;background:var(--grad-main);opacity:.5;filter:blur(14px);z-index:0}
+.ta-photo{position:relative;z-index:2;width:100%;aspect-ratio:1/1;border-radius:22px;background:linear-gradient(160deg,rgba(20,26,42,0.95),rgba(12,16,28,0.95));border:1px solid var(--glass-border);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden}
+.ta-photo::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(139,92,246,0.18),transparent 60%)}
+.ta-photo-sil{width:88px;height:88px;border-radius:50%;background:var(--grad-soft);border:1px solid rgba(139,92,246,0.3);display:grid;place-items:center;color:var(--accent-purple-2);position:relative;z-index:2}
+.ta-photo-sil svg{width:44px;height:44px}
+.ta-photo-label{position:relative;z-index:2;text-align:center}
+.ta-photo-label b{display:block;font-family:'Manrope';font-weight:700;font-size:18px;color:#fff;margin-bottom:4px}
+.ta-photo-label small{font-size:13px;color:var(--text-muted)}
+.ta-photo-note{position:relative;z-index:2;font-size:11.5px;color:var(--text-muted);text-align:center;padding:6px 14px;background:rgba(255,255,255,0.03);border:1px dashed var(--glass-border);border-radius:20px}
+.ta-about-text .ta-eyebrow{margin-bottom:20px}
+.ta-about-text h2{font-size:clamp(24px,3.2vw,38px);font-weight:800;margin-bottom:20px;line-height:1.15}
+.ta-about-text>p{font-size:16px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px}
+.ta-about-points{display:flex;flex-direction:column;gap:12px;margin:24px 0 30px}
+.ta-about-point{display:flex;align-items:center;gap:12px;font-size:14.5px;color:var(--text-secondary)}
+.ta-about-point .ta-check{width:22px;height:22px;border-radius:7px;background:var(--grad-soft);border:1px solid rgba(139,92,246,0.3);display:grid;place-items:center;flex:0 0 auto}
+.ta-about-point .ta-check svg{width:12px;height:12px;color:var(--accent-purple-2)}
+.ta-about-point b{color:#fff;font-weight:600}
+
+/* ===== FAQ ===== */
+.ta-faq{max-width:820px;margin:0 auto}
+.ta-faq-item{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:border-color .25s ease,background .25s ease}
+.ta-faq-item.open{border-color:rgba(139,92,246,0.4);background:rgba(15,20,36,0.9)}
+.ta-faq-q{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;cursor:pointer;width:100%;text-align:left;font-family:'Manrope';font-weight:600;font-size:16px;color:#fff;transition:color .2s ease}
+.ta-faq-q:hover{color:var(--accent-purple-2)}
+.ta-faq-icon{flex:0 0 auto;width:30px;height:30px;border-radius:9px;background:var(--glass-2);border:1px solid var(--glass-border);display:grid;place-items:center;transition:transform .3s ease,background .25s ease}
+.ta-faq-icon svg{width:14px;height:14px;color:var(--accent-purple-2);transition:transform .3s ease}
+.ta-faq-item.open .ta-faq-icon{background:var(--grad-main);border-color:transparent}
+.ta-faq-item.open .ta-faq-icon svg{color:#fff;transform:rotate(45deg)}
+.ta-faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.ta-faq-a-inner{padding:0 24px 22px;font-size:14.5px;line-height:1.7;color:var(--text-secondary)}
+
+/* ===== Final ===== */
+.ta-final{padding:110px 0;position:relative;overflow:hidden}
+.ta-final-inner{position:relative;text-align:center;max-width:760px;margin:0 auto;padding:64px 40px;background:linear-gradient(160deg,rgba(20,26,42,0.9),rgba(12,16,28,0.9));border:1px solid var(--glass-border);border-radius:30px;overflow:hidden;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.ta-final-inner::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,0.25),transparent 65%);top:-160px;left:50%;transform:translateX(-50%);filter:blur(20px)}
+.ta-final h2{font-size:clamp(28px,4vw,46px);font-weight:800;margin-bottom:18px;position:relative;z-index:2}
+.ta-final h2 .ta-hl{background:linear-gradient(120deg,#A78BFA,#22D3EE);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ta-final>p{font-size:17px;color:var(--text-secondary);line-height:1.7;margin-bottom:34px;position:relative;z-index:2}
+.ta-final .ta-btn{position:relative;z-index:2}
+.ta-final-meta{margin-top:24px;font-size:13.5px;color:var(--text-muted);position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+
+/* ===== Footer ===== */
+.ta-footer{padding:40px 0;border-top:1px solid var(--glass-border);background:var(--bg-secondary)}
+.ta-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.ta-footer .ta-logo{font-size:15px}
+.ta-footer .ta-logo-mark{width:28px;height:28px}
+.ta-footer-copy{font-size:13px;color:var(--text-muted)}
+.ta-footer-copy a{color:var(--accent-purple-2)}
+.ta-footer-links{display:flex;gap:22px}
+.ta-footer-links a{font-size:13px;color:var(--text-muted);transition:color .2s ease}
+.ta-footer-links a:hover{color:#fff}
+
+/* ===== Floating WhatsApp ===== */
+.ta-wa-float{position:fixed;bottom:24px;right:24px;z-index:1200;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,0.6),inset 0 1px 0 rgba(255,255,255,0.25);transition:transform .25s ease,box-shadow .25s ease;animation:taPulse 2.6s ease-in-out infinite}
+.ta-wa-float:hover{transform:scale(1.08);box-shadow:0 16px 36px -8px rgba(37,211,102,0.75)}
+.ta-wa-float svg{width:30px;height:30px;color:#fff}
+.ta-wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(37,211,102,0.5);animation:taRing 2.6s ease-out infinite}
+@keyframes taPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes taRing{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+.ta-wa-label{position:absolute;right:70px;top:50%;transform:translateY(-50%) translateX(8px);background:rgba(16,21,36,0.95);border:1px solid var(--glass-border);color:#fff;font-size:13px;font-weight:500;padding:9px 14px;border-radius:10px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;backdrop-filter:blur(10px)}
+.ta-wa-float:hover .ta-wa-label{opacity:1;transform:translateY(-50%) translateX(0)}
+
+/* ===== Reveal animation ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in-view{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.08s}
+.reveal[data-d="2"]{transition-delay:.16s}
+.reveal[data-d="3"]{transition-delay:.24s}
+.reveal[data-d="4"]{transition-delay:.32s}
+
+/* ===== Responsive ===== */
+@media (max-width:1080px){
+  .ta-program-grid{grid-template-columns:repeat(2,1fr)}
+  .ta-benefits-grid{grid-template-columns:repeat(2,1fr)}
+  .ta-steps{grid-template-columns:repeat(2,1fr);gap:30px 22px}
+  .ta-steps::before{display:none}
+}
+@media (max-width:920px){
+  .ta-nav,.ta-header .ta-header-desktop-cta{display:none}
+  .ta-burger{display:flex}
+  .ta-hero{padding:120px 0 70px}
+  .ta-hero-grid{grid-template-columns:1fr;gap:48px}
+  .ta-hero-visual{min-height:380px;order:2}
+  .ta-about-grid{grid-template-columns:1fr;gap:36px}
+  .ta-result-grid{grid-template-columns:1fr;gap:30px}
+  .ta-audience-grid{grid-template-columns:1fr;gap:18px}
+  .ta-section{padding:74px 0}
+  .ta-mobile-nav{top:74px}
+}
+@media (max-width:640px){
+  .ta-root{font-size:15px}
+  .ta-container{padding:0 18px}
+  .ta-program-grid{grid-template-columns:1fr}
+  .ta-benefits-grid{grid-template-columns:1fr}
+  .ta-steps{grid-template-columns:1fr;gap:26px}
+  .ta-result{padding:30px 22px}
+  .ta-final-inner{padding:44px 22px}
+  .ta-card{padding:26px 22px}
+  .ta-hero-cta{flex-direction:column;align-items:stretch}
+  .ta-hero-cta .ta-btn{width:100%}
+  .ta-hero-note{justify-content:center;text-align:center}
+  .ta-float-1{left:0;top:2%}
+  .ta-float-2{right:0;bottom:2%}
+  .ta-float b{font-size:11.5px}
+  .ta-footer-inner{flex-direction:column;text-align:center;gap:14px}
+  .ta-wa-float{width:54px;height:54px;bottom:18px;right:18px}
+  .ta-wa-float svg{width:26px;height:26px}
+}
+@media (max-width:420px){
+  .ta-dashboard{padding:18px}
+  .ta-dash-tiles{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .ta-float-1,.ta-float-2,.ta-wa-float,.ta-wa-float::after{animation:none!important}
+  *{scroll-behavior:auto!important}
+}
+.ta-root{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div class="ta-bg"></div>
+<div class="ta-root">
+
+<!-- ============ HEADER ============ -->
+<header class="ta-header" id="ta-top">
+  <div class="ta-container">
+    <div class="ta-header-inner">
+      <a href="#ta-top" class="ta-logo" aria-label="Target Academy — на главную">
+        <span class="ta-logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>
+        </span>
+        <span>TARGET ACADEMY</span>
+      </a>
+      <nav class="ta-nav" aria-label="Основная навигация">
+        <a href="#learning">Обучение</a>
+        <a href="#program">Программа</a>
+        <a href="#audience">Для кого</a>
+        <a href="#about">Об авторе</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="ta-header-cta">
+        <a href="#" class="ta-btn ta-btn-primary ta-header-desktop-cta wa-link">
+          <svg class="ta-wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.912zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Записаться
+        </a>
+        <button class="ta-burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="ta-mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="ta-mobile-nav" id="ta-mobile-nav">
+  <a href="#learning">Обучение</a>
+  <a href="#program">Программа</a>
+  <a href="#audience">Для кого</a>
+  <a href="#about">Об авторе</a>
+  <a href="#faq">FAQ</a>
+  <a href="#" class="ta-btn ta-btn-primary wa-link">
+    <svg class="ta-wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.912zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    Записаться на обучение
+  </a>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="ta-hero" id="hero">
+  <div class="ta-container">
+    <div class="ta-hero-grid">
+      <div class="ta-hero-left">
+        <span class="ta-eyebrow reveal"><span class="ta-dot"></span>Обучение таргетированной рекламе · Алматы</span>
+        <h1 class="reveal" data-d="1">Научитесь запускать <span class="ta-hl">таргетированную рекламу</span> и привлекать клиентов из Instagram и Facebook</h1>
+        <p class="ta-hero-sub reveal" data-d="2">Освойте востребованный навык интернет-маркетинга с нуля и научитесь самостоятельно настраивать рекламные кампании для бизнеса.</p>
+        <ul class="ta-hero-benefits reveal" data-d="2">
+          <li class="ta-hero-benefit"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Обучение с нуля</b> — даже если вы раньше не запускали рекламу.</span></li>
+          <li class="ta-hero-benefit"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Практика на реальных задачах</b> — от создания рекламной кампании до анализа результатов.</span></li>
+          <li class="ta-hero-benefit"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Навык для заработка</b> — сможете применять знания для собственного бизнеса или работы с клиентами.</span></li>
+          <li class="ta-hero-benefit"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Поддержка в обучении</b> — помощь в освоении рекламных инструментов.</span></li>
+        </ul>
+        <div class="ta-hero-cta reveal" data-d="3">
+          <a href="#" class="ta-btn ta-btn-primary ta-btn-lg wa-link">
+            <svg class="ta-wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.912zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Записаться на обучение
+          </a>
+          <span class="ta-hero-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Начните осваивать таргетированную рекламу уже сейчас
+          </span>
+        </div>
+      </div>
+
+      <div class="ta-hero-visual reveal" data-d="3" aria-hidden="true">
+        <div class="ta-glow"></div>
+        <div class="ta-dashboard">
+          <div class="ta-dash-head">
+            <div class="ta-dash-title">
+              <div class="ta-avatar">TA</div>
+              <div class="ta-name">Рекламный кабинет<small>Настройка кампании</small></div>
+            </div>
+            <span class="ta-dash-badge"><span class="ta-dot"></span>Активна</span>
+          </div>
+          <div class="ta-dash-chart">
+            <div class="ta-dash-chart-lbl"><span>Активность кампании</span><b>декоративный график</b></div>
+            <svg viewBox="0 0 320 90" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="taArea" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.45"/>
+                  <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0,70 C40,52 60,30 100,40 C140,50 160,18 200,26 C240,34 280,12 320,20 L320,90 L0,90 Z" fill="url(#taArea)"/>
+              <path d="M0,70 C40,52 60,30 100,40 C140,50 160,18 200,26 C240,34 280,12 320,20" fill="none" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="200" cy="26" r="3.5" fill="#A78BFA"/>
+              <circle cx="200" cy="26" r="6" fill="#A78BFA" opacity="0.25"/>
+            </svg>
+          </div>
+          <div class="ta-dash-tiles">
+            <div class="ta-dash-tile">
+              <div class="ta-tl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Аудитория</div>
+              <div class="ta-chips"><span>Алматы</span><span>25–34</span><span>Интересы</span></div>
+            </div>
+            <div class="ta-dash-tile">
+              <div class="ta-tl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>Охват</div>
+              <div class="ta-bars"><i style="height:40%"></i><i style="height:65%"></i><i style="height:50%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:95%"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="ta-float ta-float-1">
+          <div class="ta-f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14"/></svg></div>
+          <div><b>Аналитика</b><small>анализ результатов</small></div>
+        </div>
+        <div class="ta-float ta-float-2">
+          <div class="ta-f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <div><b>Таргетинг</b><small>целевая аудитория</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- ============ AUDIENCE ============ -->
+<section class="ta-section" id="audience">
+  <div class="ta-container">
+    <div class="ta-section-head">
+      <span class="ta-eyebrow reveal"><span class="ta-dot"></span>Для кого подходит обучение</span>
+      <h2 class="reveal" data-d="1">Кому подойдёт этот курс</h2>
+      <p class="reveal" data-d="2">Обучение построено так, чтобы быть полезным и новичкам, и тем, кто уже ведёт своё дело или работает в смежной сфере.</p>
+    </div>
+    <div class="ta-audience-grid">
+      <article class="ta-card reveal" data-d="1">
+        <span class="ta-card-num">01</span>
+        <div class="ta-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <h3>Для начинающих</h3>
+        <p>Для тех, кто хочет освоить новую профессию в digital-маркетинге и начать разбираться в таргетированной рекламе с самого начала — без предварительной подготовки.</p>
+      </article>
+      <article class="ta-card reveal" data-d="2">
+        <span class="ta-card-num">02</span>
+        <div class="ta-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Для предпринимателей</h3>
+        <p>Для владельцев бизнеса, которые хотят самостоятельно продвигать свой проект в Instagram и Facebook и понимать, как настраиваются рекламные кампании.</p>
+      </article>
+      <article class="ta-card reveal" data-d="3">
+        <span class="ta-card-num">03</span>
+        <div class="ta-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Для специалистов</h3>
+        <p>Для маркетологов, SMM-специалистов и фрилансеров, которые хотят расширить свои навыки и добавить настройку таргетированной рекламы в свой инструментарий.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- ============ PROGRAM / WHAT YOU'LL LEARN ============ -->
+<section class="ta-section" id="program">
+  <div class="ta-container">
+    <div class="ta-section-head">
+      <span class="ta-eyebrow reveal"><span class="ta-dot"></span>Программа обучения</span>
+      <h2 class="reveal" data-d="1">Чему вы научитесь</h2>
+      <p class="reveal" data-d="2">Программа охватывает весь путь — от понимания основ таргетированной рекламы до анализа и оптимизации рекламных кампаний.</p>
+    </div>
+    <div class="ta-program-grid">
+      <article class="ta-pcard reveal" data-d="1">
+        <span class="ta-pcard-num">01</span>
+        <div class="ta-pcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20v14H2z"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Основы таргетированной рекламы</h3>
+        <p>Как устроена таргетированная реклама и чем она отличается от других видов продвижения.</p>
+      </article>
+      <article class="ta-pcard reveal" data-d="1">
+        <span class="ta-pcard-num">02</span>
+        <div class="ta-pcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Работа с рекламными кабинетами Meta</h3>
+        <p>Знакомство с рекламным кабинетом и навигация по его основным разделам.</p>
+      </article>
+      <article class="ta-pcard reveal" data-d="2">
+        <span class="ta-pcard-num">03</span>
+        <div class="ta-pcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/></svg></div>
+        <h3>Определение целевой аудитории</h3>
+        <p>Как находить и описывать аудиторию, которой будет интересна ваша реклама.</p>
+      </article>
+      <article class="ta-pcard reveal" data-d="2">
+        <span class="ta-pcard-num">04</span>
+        <div class="ta-pcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Создание рекламных объявлений</h3>
+        <p>Как составить объявление и оформить его для запуска в ленте.</p>
+      </article>
+      <article class="ta-pcard reveal" data-d="3">
+        <span class="ta-pcard-num">05</span>
+        <div class="ta-pcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+        <h3>Подбор рекламных креативов</h3>
+        <p>Как подбирать визуальные и текстовые креативы под задачу кампании.</p>
+      </article>
+      <article class="ta-pcard reveal" data-d="3">
+        <span class="ta-pcard-num">06</span>
+        <div class="ta-pcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+        <h3>Настройка рекламных кампаний</h3>
+        <p>Практический запуск кампании: параметры, бюджет и публикации.</p>
+      </article>
+      <article class="ta-pcard reveal" data-d="4">
+        <span class="ta-pcard-num">07</span>
+        <div class="ta-pcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <h3>Анализ результатов рекламы</h3>
+        <p>Как читать показатели рекламного кабинета и оценивать результаты запуска.</p>
+      </article>
+      <article class="ta-pcard reveal" data-d="4">
+        <span class="ta-pcard-num">08</span>
+        <div class="ta-pcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
+        <h3>Оптимизация рекламных кампаний</h3>
+        <p>Как вносить изменения по результатам анализа и улучшать кампании.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- ============ HOW / LEARNING ============ -->
+<section class="ta-section" id="learning">
+  <div class="ta-container">
+    <div class="ta-section-head">
+      <span class="ta-eyebrow reveal"><span class="ta-dot"></span>Как проходит обучение</span>
+      <h2 class="reveal" data-d="1">Путь обучения</h2>
+      <p class="reveal" data-d="2">Обучение выстроено как последовательный путь — от знакомства с основами до самостоятельной работы с рекламой.</p>
+    </div>
+    <div class="ta-steps">
+      <div class="ta-step reveal" data-d="1">
+        <span class="ta-step-n">1</span>
+        <div class="ta-step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20v14H2z"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Знакомство с основами</h3>
+        <p>Разбираемся, как устроена таргетированная реклама и какие задачи она решает.</p>
+      </div>
+      <div class="ta-step reveal" data-d="2">
+        <span class="ta-step-n">2</span>
+        <div class="ta-step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Изучение рекламных инструментов</h3>
+        <p>Осваиваем рекламный кабинет и инструменты для работы с аудиторией и креативами.</p>
+      </div>
+      <div class="ta-step reveal" data-d="3">
+        <span class="ta-step-n">3</span>
+        <div class="ta-step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Практическая работа</h3>
+        <p>Настраиваем рекламные кампании на реальных задачах — от аудитории до запуска.</p>
+      </div>
+      <div class="ta-step reveal" data-d="4">
+        <span class="ta-step-n">4</span>
+        <div class="ta-step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <h3>Анализ и оптимизация рекламы</h3>
+        <p>Оцениваем результаты запуска и работаем над улучшением кампаний.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- ============ RESULT ============ -->
+<section class="ta-section" id="result">
+  <div class="ta-container">
+    <div class="ta-result">
+      <div class="ta-result-grid">
+        <div class="reveal" data-d="1">
+          <span class="ta-eyebrow"><span class="ta-dot"></span>Результат обучения</span>
+          <h2>Что вы получите</h2>
+          <p>После обучения вы будете понимать, как устроена таргетированная реклама, и сможете самостоятельно работать с рекламными кампаниями — для своего бизнеса или в работе с клиентами.</p>
+          <div class="ta-result-list">
+            <div class="ta-result-item"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b>Практический навык настройки рекламы</b><span>Умение создавать и запускать кампании в рекламном кабинете.</span></div></div>
+            <div class="ta-result-item"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b>Понимание аудитории и креативов</b><span>Навык определять целевую аудиторию и подбирать подходящие креативы.</span></div></div>
+            <div class="ta-result-item"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b>Применение на практике</b><span>Возможность использовать навыки для собственного бизнеса или работы с клиентами.</span></div></div>
+          </div>
+        </div>
+        <div class="ta-result-visual reveal" data-d="2">
+          <div class="ta-result-skill"><div class="ta-rs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><div><b>Настройка таргетинга</b><small>работа с аудиторией</small></div></div>
+          <div class="ta-result-skill"><div class="ta-rs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div><b>Создание креативов</b><small>объявления и визуал</small></div></div>
+          <div class="ta-result-skill"><div class="ta-rs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><div><b>Анализ результатов</b><small>чтение показателей</small></div></div>
+          <div class="ta-result-skill"><div class="ta-rs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14"/></svg></div><div><b>Оптимизация кампаний</b><small>улучшение по результатам</small></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- ============ BENEFITS ============ -->
+<section class="ta-section" id="benefits">
+  <div class="ta-container">
+    <div class="ta-section-head">
+      <span class="ta-eyebrow reveal"><span class="ta-dot"></span>Преимущества обучения</span>
+      <h2 class="reveal" data-d="1">Почему стоит учиться у нас</h2>
+      <p class="reveal" data-d="2">Подход к обучению построен вокруг практики и понятного освоения рекламных инструментов — без лишней теории.</p>
+    </div>
+    <div class="ta-benefits-grid">
+      <article class="ta-bcard reveal" data-d="1">
+        <div class="ta-bcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <h3>Обучение с нуля</h3>
+        <p>Программа рассчитана на тех, кто раньше не запускал рекламу — предварительная подготовка не нужна.</p>
+      </article>
+      <article class="ta-bcard reveal" data-d="2">
+        <div class="ta-bcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Практика на реальных задачах</h3>
+        <p>Разбираем процесс настройки рекламы на конкретных задачах — от запуска кампании до анализа результатов.</p>
+      </article>
+      <article class="ta-bcard reveal" data-d="3">
+        <div class="ta-bcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Поддержка в обучении</h3>
+        <p>Помощь в освоении рекламных инструментов — можно задавать вопросы и получать пояснения по ходу обучения.</p>
+      </article>
+      <article class="ta-bcard reveal" data-d="4">
+        <div class="ta-bcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><polyline points="7 12 11 8 14 11 17 7"/></svg></div>
+        <h3>Применимость навыка</h3>
+        <p>Полученные знания можно использовать для собственного бизнеса или в работе с клиентами.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- ============ ABOUT ============ -->
+<section class="ta-section" id="about">
+  <div class="ta-container">
+    <div class="ta-about-grid">
+      <div class="reveal" data-d="1">
+        <div class="ta-photo-frame">
+          <div class="ta-photo">
+            <div class="ta-photo-sil"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <div class="ta-photo-label"><b>Мурат</b><small>Алматы · таргетированная реклама</small></div>
+            <span class="ta-photo-note">Место для фотографии</span>
+          </div>
+        </div>
+      </div>
+      <div class="ta-about-text reveal" data-d="2">
+        <span class="ta-eyebrow"><span class="ta-dot"></span>Об авторе</span>
+        <h2>Обучение таргетированной рекламе с Муратом</h2>
+        <p>Мурат ведёт обучение таргетированной рекламе в Алматы и помогает освоить навык запуска рекламы в Instagram и Facebook — с нуля и на практике.</p>
+        <p>Подход к обучению, формат и подробности программы можно обсудить лично. Свяжитесь с Муратом через WhatsApp, чтобы узнать больше и задать свои вопросы.</p>
+        <div class="ta-about-points">
+          <div class="ta-about-point"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Обучение <b>таргетированной рекламе</b> в Алматы</span></div>
+          <div class="ta-about-point"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Запуск рекламы в <b>Instagram и Facebook</b></span></div>
+          <div class="ta-about-point"><span class="ta-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Личная связь</b> через WhatsApp</span></div>
+        </div>
+        <a href="#" class="ta-btn ta-btn-primary ta-btn-lg wa-link">
+          <svg class="ta-wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.912zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Написать Мурату в WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- ============ FAQ ============ -->
+<section class="ta-section" id="faq">
+  <div class="ta-container">
+    <div class="ta-section-head">
+      <span class="ta-eyebrow reveal"><span class="ta-dot"></span>FAQ</span>
+      <h2 class="reveal" data-d="1">Частые вопросы</h2>
+      <p class="reveal" data-d="2">Собрали ответы на вопросы, которые чаще всего задают перед началом обучения.</p>
+    </div>
+    <div class="ta-faq reveal" data-d="2">
+      <div class="ta-faq-item">
+        <button class="ta-faq-q" aria-expanded="false">Подойдет ли обучение новичкам?<span class="ta-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="ta-faq-a"><div class="ta-faq-a-inner">Да, обучение построено с нуля и рассчитано на тех, кто раньше не запускал рекламу. Предварительный опыт не требуется — мы разбираем основы и постепенно переходим к практике.</div></div>
+      </div>
+      <div class="ta-faq-item">
+        <button class="ta-faq-q" aria-expanded="false">Нужно ли иметь опыт в рекламе?<span class="ta-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="ta-faq-a"><div class="ta-faq-a-inner">Нет, опыт в рекламе не нужен. Программа начинается с базовых понятий таргетированной рекламы, поэтому начать можно без специальной подготовки.</div></div>
+      </div>
+      <div class="ta-faq-item">
+        <button class="ta-faq-q" aria-expanded="false">Какие инструменты изучаются?<span class="ta-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="ta-faq-a"><div class="ta-faq-a-inner">В программе разбираются основы таргетированной рекламы, работа с рекламными кабинетами Meta (Instagram и Facebook), определение целевой аудитории, создание объявлений, подбор креативов, настройка и анализ рекламных кампаний.</div></div>
+      </div>
+      <div class="ta-faq-item">
+        <button class="ta-faq-q" aria-expanded="false">Можно ли применять знания для собственного бизнеса?<span class="ta-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="ta-faq-a"><div class="ta-faq-a-inner">Да, полученные навыки можно применять для продвижения собственного бизнеса, а также использовать в работе с клиентами. Это практический навык, который остаётся с вами после обучения.</div></div>
+      </div>
+      <div class="ta-faq-item">
+        <button class="ta-faq-q" aria-expanded="false">Как записаться на обучение?<span class="ta-faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+        <div class="ta-faq-a"><div class="ta-faq-a-inner">Нажмите любую кнопку «Записаться на обучение» на сайте — она откроет чат WhatsApp с Муратом по номеру +77017438061. Также можно воспользоваться плавающей кнопкой WhatsApp в правом нижнем углу страницы.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- ============ FINAL ============ -->
+<section class="ta-final" id="final">
+  <div class="ta-container">
+    <div class="ta-final-inner reveal">
+      <span class="ta-eyebrow"><span class="ta-dot"></span>Первый шаг</span>
+      <h2>Готовы освоить <span class="ta-hl">таргетированную рекламу?</span></h2>
+      <p>Сделайте первый шаг к новому профессиональному навыку. Свяжитесь с Муратом и узнайте подробности обучения.</p>
+      <a href="#" class="ta-btn ta-btn-primary ta-btn-lg wa-link">
+        <svg class="ta-wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.912zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Записаться на обучение
+      </a>
+      <div class="ta-final-meta">WhatsApp: +7 701 743 8061 · Алматы</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ta-footer">
+  <div class="ta-container">
+    <div class="ta-footer-inner">
+      <a href="#ta-top" class="ta-logo">
+        <span class="ta-logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></span>
+        <span>TARGET ACADEMY</span>
+      </a>
+      <nav class="ta-footer-links" aria-label="Дополнительная навигация">
+        <a href="#program">Программа</a>
+        <a href="#audience">Для кого</a>
+        <a href="#about">Об авторе</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="ta-footer-copy">© <span id="ta-year">2026</span> Target Academy · Алматы · <a href="#" class="wa-link">WhatsApp +77017438061</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="#" class="ta-wa-float wa-link" aria-label="Написать в WhatsApp">
+  <span class="ta-wa-label">Записаться на обучение</span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.912zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+</div><!-- /.ta-root -->
+
+<script>
+(function(){
+  "use strict";
+
+  /* ===== WhatsApp links ===== */
+  var waPhone = "77017438061";
+  var waMsg = "Здравствуйте! Хочу узнать подробнее об обучении таргетированной рекламе.";
+  var waUrl = "https://wa.me/" + waPhone + "?text=" + encodeURIComponent(waMsg);
+  document.querySelectorAll(".wa-link").forEach(function(el){
+    el.setAttribute("href", waUrl);
+    el.setAttribute("target", "_blank");
+    el.setAttribute("rel", "noopener noreferrer");
+  });
+
+  /* ===== Footer year ===== */
+  var yEl = document.getElementById("ta-year");
+  if(yEl){ yEl.textContent = new Date().getFullYear(); }
+
+  var root = document.querySelector(".ta-root");
+  var header = root.querySelector(".ta-header");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ===== Header scroll state ===== */
+  function onScroll(){
+    if(window.scrollY > 30){ header.classList.add("scrolled"); }
+    else{ header.classList.remove("scrolled"); }
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* ===== Mobile menu ===== */
+  var burger = root.querySelector(".ta-burger");
+  var mobileNav = root.querySelector("#ta-mobile-nav");
+  function closeMenu(){
+    burger.classList.remove("open");
+    mobileNav.classList.remove("open");
+    burger.setAttribute("aria-expanded","false");
+    document.body.style.overflow = "";
+  }
+  burger.addEventListener("click", function(){
+    var open = burger.classList.toggle("open");
+    mobileNav.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    document.body.style.overflow = open ? "hidden" : "";
+  });
+  mobileNav.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", closeMenu);
+  });
+
+  /* ===== Smooth scroll for in-page anchors ===== */
+  root.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id = a.getAttribute("href");
+      if(!id || id === "#" || id.length < 2){ return; }
+      var target = document.querySelector(id);
+      if(!target){ return; }
+      e.preventDefault();
+      var offset = (header ? header.offsetHeight : 70) + 12;
+      var y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: y, behavior: reduce ? "auto" : "smooth" });
+    });
+  });
+
+  /* ===== FAQ accordion ===== */
+  var faqItems = root.querySelectorAll(".ta-faq-item");
+  faqItems.forEach(function(item){
+    var q = item.querySelector(".ta-faq-q");
+    var a = item.querySelector(".ta-faq-a");
+    q.addEventListener("click", function(){
+      var isOpen = item.classList.contains("open");
+      faqItems.forEach(function(i){
+        i.classList.remove("open");
+        i.querySelector(".ta-faq-a").style.maxHeight = null;
+        i.querySelector(".ta-faq-q").setAttribute("aria-expanded","false");
+      });
+      if(!isOpen){
+        item.classList.add("open");
+        a.style.maxHeight = a.scrollHeight + "px";
+        q.setAttribute("aria-expanded","true");
+      }
+    });
+  });
+
+  /* ===== Reveal on scroll ===== */
+  var revealEls = root.querySelectorAll(".reveal");
+  if(reduce || !("IntersectionObserver" in window)){
+    revealEls.forEach(function(el){ el.classList.add("in-view"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add("in-view");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    revealEls.forEach(function(el){ io.observe(el); });
+  }
+
+  /* ===== Close mobile menu on resize to desktop ===== */
+  window.addEventListener("resize", function(){
+    if(window.innerWidth > 920){ closeMenu(); }
+  });
+})();
+</script>
+</body>
+</html>
